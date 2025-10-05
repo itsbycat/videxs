@@ -1,0 +1,140 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #171717;
+    color: white;
+
+    overflow-x: hidden;
+
+    width: 500px;
+    height: 500px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body > * {
+    padding: 15px;
+}
+
+main {
+    min-height: 92vh;
+}
+
+footer {
+    background-color: #080808;
+    color: dimgray;
+
+    font-size: x-small;
+    font-family: monospace;
+
+    text-align: center;
+}
+
+footer a {
+    color: gray;
+}
+
+a {
+    color: white;
+    text-decoration: solid underline .1px gray;
+}
+
+.error {
+    background-color: rgba(170, 0, 0, .1) !important;
+    border: 1px solid rgba(255, 0, 0, .1) !important;
+}
+
+.box {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(170, 170, 170, .1);
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: gray;
+    gap: 15px;
+    border-radius: 15px;
+    overflow: hidden !important;
+    transition: .2s all ease !important;
+}
+
+a.box pre {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    transition: .5s all ease !important;
+}
+
+.tags {
+    display: flex;
+    gap: 15px;
+}
+
+.tag {
+    background-color: #0f0f0f24;
+    border: 1px solid #0f0f0f36;
+    border-radius: 5px;
+    color: lightgray;
+    box-shadow: 0 0 5px #303030;
+    padding: 5px;
+    font-size: xx-small;
+    text-transform: uppercase;
+}
+
+.tag::before {
+    content: attr(data-text);
+}
+
+.source-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+a.box:hover {
+    outline: 1px solid rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .1);
+}
+
+a.box.copied {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.copied {
+    color: white;
+}
+
+.tag[data-text="video"] {
+    background-color: #90ee9024 !important;
+    border: 1px solid #90ee9036 !important;
+    box-shadow: 0 0 5px #90ee90 !important;
+}
+
+.tag[data-text="iframe"], .tag[data-text="frame"] {
+    background-color: #3fa6ea24 !important;
+    border: 1px solid #3fa6ea36 !important;
+    box-shadow: 0 0 5px #3fa6ea !important;
+}
+
+.tag[data-text="http"] {
+    background-color: #90000024 !important;
+    border: 1px solid #90000036 !important;
+    box-shadow: 0 0 5px #900000 !important;
+}
+
+.tag[data-text="redirect"] {
+    background-color: #843b2e24 !important;
+    border: 1px solid #843b2e36 !important;
+    box-shadow: 0 0 5px #843b2e !important;
+}
