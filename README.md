@@ -5,7 +5,6 @@ A powerful web tool that automatically detects and extracts all video iframes, e
 ## Features
 
 - 🎥 **Automatic Detection** - Instantly finds all iframes on any webpage
-- 🔍 **Multi-Source Support** - Detects iframes from Claude.ai, Google reCAPTCHA, Stripe, and more
 - 📋 **Easy Copy** - Click to copy iframe URLs to clipboard
 - 🎨 **Clean Interface** - Modern, dark-themed UI for comfortable viewing
 - ⚡ **Real-time Analysis** - Processes pages quickly and efficiently
