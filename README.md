@@ -32,8 +32,6 @@ Simply clone this repository and open the HTML file in your browser:
 
 ```bash
 git clone https://github.com/yourusername/video-iframe-extractor.git
-cd video-iframe-extractor
-# Open index.html in your browser
 ```
 
 ## Usage
